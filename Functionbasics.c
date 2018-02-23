@@ -40,3 +40,9 @@ Want to add note to describe functions
 We will focus on:   defiine, invoke, pass & return data from functions. 
 
 */
+
+/*MAIN FUNCTION
+main()
+-All C programs nust alwashave a main()
+Can pass data to it (command line arguments)
+Returning data optional (error code)
