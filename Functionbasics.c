@@ -19,4 +19,24 @@ printf()
  scanf() canr eceive info back from function in two ways
   -Input is stored in an address that you supply as an argument
   -As a return value
+  
+  
+*/
+
+#define SIZE 50
+int main(void)
+{
+  float list[SIZE];
+  readlist(list, SIZE);
+  sort(list, SIZE);
+  average(list, SIZE);
+  return 0;
+}
+
+/* IMPLEMENT FUNCTIONS
+We would have to implement functions readlist(), sort(), average(list, SIZE)
+Want to add note to describe functions
+
+We will focus on:   defiine, invoke, pass & return data from functions. 
+
 */
