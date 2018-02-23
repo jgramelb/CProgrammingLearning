@@ -43,5 +43,18 @@ function prototypes - statement that defines a function
   -provides all the external specifications for the function
 You can write a prototype for a function exactly the same as the function header
   -only differnce is that you add a semicolon at the end
-  
+  */
+/* Example
 
+#include & #define directives...
+Function prototypes
+double Average(double_data_values[], size_t_count);
+double Sum(double *x, size_t n);
+size_t GetData(double*, size_t);
+
+int main(void)
+{
+ codein main()
+}
+
+Defintions
