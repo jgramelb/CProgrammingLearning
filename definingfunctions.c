@@ -57,4 +57,16 @@ int main(void)
  codein main()
 }
 
-Defintions
+*/
+
+#include <stdio.h>
+
+void add()
+{
+}
+
+int main()
+{
+  add();
+ return 0;
+}
