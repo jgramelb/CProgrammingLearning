@@ -1,0 +1,9 @@
+/* Arguments and parameters
+Data that you pass thru a function 
+
+Parameter - variable in a function declaration & function definition/implementation
+                          ^name                           ^actual code
+Names of parameter are local to the function
+
+ 
+*/
