@@ -2,16 +2,17 @@
 The first portion finds the greatest common divisor of two non negative integer values and returns the result
 The second portion calculates the absolute value of a number
 The third portion of the function computes the square root of a number
-    if a negative arguments is passed then a message is display and -1.0 should be returned
-    should use the absoluteValue function as implemented in the above step
 */
 
-//Caluclate the GCD
+//Calculate the GCD
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int gcd(int A, int B);
 float absoluteValue(float x);
+float squareRoot(float xx);
 
 //Function to display the output
 int main()
@@ -43,7 +44,20 @@ int main()
     scanf("%f", &X);
 
     result_absoluteValue = absoluteValue(X);
-    printf("\nThe absolute value of %.2f is %.2f\n\n", X, result_absoluteValue);
+    printf("\nThe absolute value of %.2f is %.2f", X, result_absoluteValue);
+
+
+    //Tells this user what this portion is about
+    printf("\n\n\n\nThis portion of the program computes the square root of a number given");
+
+
+    float XX = 0;
+    float result_squareRoot = 0;
+    printf("\nEnter a value for XX: ");
+    scanf("%f", &XX);
+
+    result_squareRoot = squareRoot(XX);
+    printf("\nThe square root of %.2f is %.2f\n\n", XX, result_squareRoot);
 
     return 0;
 }
@@ -80,11 +94,20 @@ float absoluteValue(float x)
 }
 
 //Function to find the square root of number given
-float squareRoot(float x)
+float squareRoot(float xx)
 {
-    if (x<0)
+    //float absoluteValue(float xx);
+    float returnValue = 0.0;
+    if (xx<0)
     {
-        x = -x;
+        printf("Please enter a positive integer");
+        returnValue = -1.0;
     }
-    return x;
+    if (returnValue != -1.0)
+    {
+        xx = sqrt(xx);
+        returnValue = xx;
+
+    }
+    return returnValue;
 }
